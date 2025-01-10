@@ -1,0 +1,230 @@
+/* General Reset */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    ;
+}
+
+
+
+.title {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: fixed; /* Fixes the title at the top */
+    top: 0; /* Position at the very top of the page */
+    left: 0; /* Align it to the left side */
+    width: 100%; /* Make the title span the full width */
+    z-index: 10; /* Ensure it's above other elements */
+    background-color:#570026; /* Optional: background to make the text stand out */
+    padding: 10px 0; /* Optional: adjust the padding for spacing */
+}
+.about{
+    color: black;
+    text-align: right;
+
+}
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: 150vh;
+    background-color: white;
+    border-left: #333;
+    padding-top: 60px; /* Space for the fixed title */
+}
+
+/* Left Sidebar */
+.logo{
+    font-family: "Berkshire Swash", serif;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.left-sidebar {
+    margin-top: 10px;
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-right: gray;
+    margin-left: 30px;
+    
+}
+
+.left-sidebar ul {
+    list-style: none;
+    
+}
+
+.left-sidebar li {
+    margin: 15px 0;
+    
+}
+
+
+
+/* News Feed */
+.news-feed {
+    width: 60%;
+    padding: 10px;
+    overflow-y: auto;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.post-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.post-actions button:hover {
+    background-color: #ddd;
+}
+
+.post-actions .like-btn, 
+.post-actions .dislike-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Comment Section */
+ .add-comment-button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.comment-input {
+    width: calc(100% - 100px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.post-comment-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-comment-btn:hover {
+    background-color: #45a049;
+}
+
+.comments-list {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.comments-list li {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* Right Sidebar */
+.right-sidebar {
+    margin-top: 10px;
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.account-section img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.account-section h3 {
+    font-size: 18px;
+    color: black;
+}
+
+.account-section p {
+    font-size: 14px;
+    color: rgb(54, 52, 52);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
